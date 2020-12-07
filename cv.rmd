@@ -45,20 +45,12 @@ if(params$pdf_mode) {
 Aside
 ================================================================================
 
-```{r}
-# Build interactive network of positions colored by section
-# and connected if they occurred in the same year
-datadrivencv::build_network_logo(CV$entries_data)
-```
+<!-- ```{r} -->
+<!-- # Build interactive network of positions colored by section -->
+<!-- # and connected if they occurred in the same year -->
+<!-- datadrivencv::build_network_logo(CV$entries_data) -->
+<!-- ``` -->
 
-
-```{r}
-if(params$pdf_mode){
-  cat("View this CV online with links at _nickstrayer.me/cv/_")
-} else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/lakikowolfe/cv/raw/master/strayer_cv.pdf)")
-}
-```
 
 Contact {#contact}
 --------------------------------------------------------------------------------
@@ -72,8 +64,11 @@ Skills {#skills}
 --------------------------------------------------------------------------------
 
 - <i class="fa fa-comments-o"></i> **Interpersonal**: _Scientific communication, public speaking, technical writing, meeting facilitation, active listening, adaptability_
+<br><br>
 - <i class="fa fa-laptop"></i> **Technical**: _GitHub, data analysis, data visualization, reproducibility, open science_
+<br><br>
 - <i class="fa fa-code"></i> **Programming**: _R, SQL, Python, HTML/CSS, JavaScript_
+<br><br>
 - <i class="fa fa-rocket"></i> **Other**: _Agile software development, task management software (Trello, Notion, Azure Dev Ops), remote work tools (Slack, MS Teams, Zoom)_
 
 
@@ -86,15 +81,6 @@ Lauren Wolfe [they/them] {#title}
 ```{r}
 # Note the special double pipe so we modify the CV object in place
 CV %<>% print_text_block("intro") 
-```
-
-
-
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('education')
 ```
 
 Work Experience {data-icon=laptop}
@@ -111,16 +97,23 @@ Volunteering {data-icon=leaf}
 CV %<>% print_section('volunteer')
 ```
 
-Publications, Posters, and Talks {data-icon=book}
+Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('academic_articles')
+CV %<>% print_section('education')
 ```
 
+<!-- Publications, Posters, and Talks {data-icon=book} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ```{r} -->
+<!-- CV %<>% print_section('academic_articles') -->
+<!-- ``` -->
 
 
-```{r}
-CV %<>% print_links()
-```
+
+<!-- ```{r} -->
+<!-- CV %<>% print_links() -->
+<!-- ``` -->
 
