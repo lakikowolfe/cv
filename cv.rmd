@@ -56,7 +56,7 @@ datadrivencv::build_network_logo(CV$entries_data)
 if(params$pdf_mode){
   cat("View this CV online with links at _nickstrayer.me/cv/_")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/nstrayer/cv/raw/master/strayer_cv.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/lakikowolfe/cv/raw/master/strayer_cv.pdf)")
 }
 ```
 
@@ -71,20 +71,10 @@ CV %>% print_contact_info()
 Skills {#skills}
 --------------------------------------------------------------------------------
 
+- <i class="fa fa-comments-o"></i> **Interpersonal**: _Scientific communication, public speaking, technical writing, meeting facilitation, active listening, adaptability_
+- <i class="fa fa-laptop"></i> **Technical**: _GitHub, data analysis, data visualization, reproducibility, open science_
 - <i class="fa fa-code"></i> **Programming**: _R, SQL, Python, HTML/CSS, JavaScript_
-- <i class="fa fa-laptop"></i> **Technical**: _GitHub, data wrangling, data visualization, reproducibility, open science_
-- <i class="fa fa-comments-o"></i> **Interpersonal**: _Scientific communication, public speaking, technical writing_
-
-
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
-
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
-
-The source code is available [on github.com/nstrayer/cv](https://github.com/nstrayer/cv).
-
-Last updated on `r Sys.Date()`.
-
+- <i class="fa fa-rocket"></i> **Other**: _Agile software development, task management software (Trello, Notion, Azure Dev Ops), remote work tools (Slack, MS Teams, Zoom)_
 
 
 Main
